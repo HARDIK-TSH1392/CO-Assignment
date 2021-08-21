@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Add command to run your program here
+python3 /Users/hardik/Desktop/CO_M21_Assignment-main/Simple-Assembler/co_assignment.py
+#echo "Hello World"
+
+#./run --no-sim
