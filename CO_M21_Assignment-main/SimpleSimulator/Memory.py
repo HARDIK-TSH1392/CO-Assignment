@@ -17,8 +17,8 @@ class __Memory:
         self.memory[program_counter] = "{:016b}".format(value)
 
 
-def readFile(filename):
-    f = open(filename, "r")
-    inst = f.read().splitlines()
-    f.close()
-    return inst
+# def readFile(filename):
+#     f = open(filename, "r")
+#     inst = f.read().splitlines()
+#     f.close()
+#     return inst
