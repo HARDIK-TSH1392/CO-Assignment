@@ -1,3 +1,4 @@
+import sys
 import Memory
 import ExecutionEngine
 import ProgramCounter
@@ -5,7 +6,8 @@ import RegisterFile
 
 
 def main():
-    Instructions = Memory.readFile("test2")
+    readFile = sys.stdin.read()  
+    Instructions = readFile.split("\n")
     memory = Memory.__Memory(Instructions)
     regFile = RegisterFile.__RegisterFile()
     PC = ProgramCounter.__ProgramCounter(0)
@@ -18,6 +20,7 @@ def main():
         regFile.dump()
         PC.update(nextPC)
     memory.dump()
+    sys.exit()
 
 
 if __name__ == '__main__':
